@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" type="image/x-icon" href="images/portofolio.png">
+</head>
+
+<body>  
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <img src="/static/images/logo.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h6>Front-End-Developer</h6>
+                <h1>Hi this is <span style="color:lightcoral;">Abhishek</span> </h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="about">
+        <div class="row">
+            <div class="container-image">
+                <img src="static/images/user.png">
+
+            </div>
+            <hr>
+            <div class="container-about">
+                <h1 style="font-size: 50px; font-weight: 500;">About me </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam recusandae at eveniet aliquam ad
+                    possimus vero, quo aliquid, nam alias libero quaerat deleniti provident quidem magnam voluptates.
+                    Ullam esse odit beatae magni sit nihil commodi illo numquam dignissimos laudantium minus hic qui
+                    asperiores tenetur eius nobis similique eaque reiciendis quam, ad explicabo? Officia id magni
+                    dolorum sint? Officiis, sint omnis!</p>
+                <div class="title">
+                    <p class="tab-title active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-title" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-title" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Designer</span> <br>Proficieny in HTML CSS & JS</li>
+                        <li><span>UI&UX</span> <br>with Figma and Photoshop</li>
+                        <li><span>Photoshop Artist </span> <br>Desining meets talent</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024(current)</span> <br>Front End Developer @ Tech Power Solutions </li>
+                        <li><span>2021-2023</span> <br>Photoshop Artist @ Fotofarbe</li>
+                        <li><span>2020-2021</span> <br>Freelancer as Digital Marketer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>MCA</span> <br>University of Madras </li>
+                        <li><span>BSc.CSC</span> <br>MGC College Of arts and Science </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+    <div id="services">
+        <div class="container">
+            <h1 style="font-size: 50px; font-weight: 500; margin-bottom: 30px;"> My Services </h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus molestias illum
+                        aspernatur iste sint beatae. </p>
+                    <a href="">View More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-digital-ocean"></i>
+                    <h2>Digital Arts </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus molestias illum
+                        aspernatur iste sint beatae. </p>
+                    <a href="">View More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Digital Marketing</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus molestias illum
+                        aspernatur iste sint beatae.</p>
+                    <a href="">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 style="font-size: 50px; font-weight: 500; margin-bottom: 30px;margin-top: 30px ;"> My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="static/images/work-1.png">
+                    <div class="layer">
+                        <h3>WebSites</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perferendis earum incidunt
+                            amet placeat quae tempora repellendus aspernatur et molestias?</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="static/images/work-2.png">
+                    <div class="layer">
+                        <h3>Graphic Design </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perferendis earum incidunt
+                            amet placeat quae tempora repellendus aspernatur et molestias?</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="static/images/work-3.png">
+                    <div class="layer">
+                        <h3>Digital Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perferendis earum incidunt
+                            amet placeat quae tempora repellendus aspernatur et molestias?</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 style="font-size: 50px; font-weight: 700; margin-bottom: 30px;">Contact me</h1>
+                <p><i class="fa-solid fa-rocket"></i>aabhisheknair2003@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>7200332859</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="static/images/Resume.pdf" download class="btn">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form action="/" method="POST,GET">
+                    <input type="text"  name="Name"  placeholder="Your name" required>
+                    <input type="email"  name="Email"  placeholder="Your Email" required>
+                    <textarea name="ta" rows="6" placeholder="Enter your Message here "></textarea>
+                    <button type="submit" class="btn2" onclick="done()">Submit</button>
+                </form>
+                <span id="msg"></span>      
+            </div>
+        </div>
+    </div>
+    <div class="copyright"> 
+        <p>Made by Abi <i class="fa-solid fa-heart"></i> </p>
+    </div>
+
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
